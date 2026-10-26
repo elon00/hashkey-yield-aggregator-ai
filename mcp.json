@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "hashkey-yield-aggregator-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "HashKey Chain",
+        "PROJECT_TICKER": "HKYIELD"
+      },
+      "tools": [
+        {
+          "name": "verify_hkyield_invariants",
+          "description": "Verifies deterministic invariants for HashKey Yield Aggregator AI on HashKey Chain."
+        },
+        {
+          "name": "execute_hkyield_action",
+          "description": "Executes authenticated DeFi state transition."
+        }
+      ]
+    }
+  }
+}
